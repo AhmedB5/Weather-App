@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 95%;
+  height: 580px;
+  height: 100%;
+  margin: 1px auto;
+  background-color: #0e1537;
+  display: flex;
+  justify-content: center;
+}
+.app {
+  width: 800px;
+  height: 540px;
+  background-image: url(img//oneColor.jpg);
+  margin-top: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: end;
+}
+.app .said {
+  background-color: rgba(81, 82, 84, 0.706);
+  width: 38%;
+  height: 540px;
+  border-radius: 0 6px 6px 0;
+  text-align: center;
+}
+.time {
+  margin-top: 20px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.time h3 {
+  color: rgb(219, 217, 217);
+  font-size: 19px;
+  font-family: sans-serif;
+}
+
+.mySearch {
+  height: 100px;
+  margin-top: 20px;
+}
+#input {
+  width: 89%;
+  height: 40px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+#search {
+  margin-top: 27px;
+  width: 90px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #1191ad;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+#search:hover {
+  transition: letter-spacing 0.3s linear;
+  letter-spacing: 1px;
+}
+
+.myData {
+  width: 100%;
+  height: 200px;
+  margin-top: 87px;
+  padding-top: 40px;
+}
+hr {
+  width: 90%;
+  margin-left: 13px;
+  height: 3px;
+  background-color: rgba(64, 77, 86, 0.673);
+}
+.main {
+  width: 100%;
+  display: block;
+}
+
+.app .logo {
+  width: 300px;
+  height: 134px;
+  width: calc(800px - 34%);
+  border-radius: 6px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 110px;
+  height: 110px;
+  display: none;
+}
+
+.app .all {
+  width: calc(600px - 34%);
+}
+.main .deg h4 {
+  font-weight: 520;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main .deg {
+  width: calc(800px - 34%);
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 75px;
+}
+
+.myData h3 {
+  height: 80px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(219, 217, 217);
+}
+.myData span {
+  padding: 30px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+.myData span i {
+  color: #beeaf1;
+  margin-left: -2px;
+  font-size: 23px;
+  display: none;
+}
+
+.myData span p {
+  margin-left: 38px;
+  font-size: 17px;
+  color: rgb(230, 230, 230);
+}
+
+.mapCity p {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(219, 217, 217);
+  font-size: 19px;
+}
+#icona {
+  color: #0c1333;
+  margin-left: 14px;
+  font-size: 17px;
+  margin-top: 4px;
+}
+
+.main .all {
+  width: calc(800px - 38%);
+  height: 120px;
+  margin-top: 165.5px;
+  border-radius: 0 0 0 6px;
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+.all h4 {
+  width: 19%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: solid 4px rgb(218, 231, 234);
+  border-radius: 15px;
+  background-color: #268ca3;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 98%;
+    height: 100%;
+    margin-top: 0;
+  }
+  .app {
+    width: 100%;
+    display: block;
+    height: 100%;
+    border-bottom: 5px solid rgb(5, 5, 7);
+    margin-top: 0;
+  }
+  .app .deg {
+    width: 100%;
+    font-size: 50px;
+  }
+  .app .logo {
+    width: 100%;
+    margin-top: 180px;
+  }
+  .app .said {
+    display: block;
+    width: max-content;
+    height: max-content;
+    background-color: #0c133300;
+    position: absolute;
+    top: 1px;
+    width: 98%;
+    height: 160px;
+  }
+  .time {
+    margin-top: 16px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .mySearch #input {
+    width: 65%;
+    height: 43px;
+    font-size: 24px;
+  }
+  .mySearch #search {
+    height: 40px;
+    margin-left: 10px;
+  }
+  hr {
+    display: none;
+  }
+
+  .time h3 {
+    color: rgb(219, 217, 217);
+    font-size: 19px;
+    font-family: sans-serif;
+    font-size: 17px;
+    margin-left: 20px;
+  }
+  .app .all {
+    width: 100%;
+    margin-top: 130px;
+    display: block !important;
+    height: 200px;
+    background-color: #0c1333;
+    background-color: #52b9b0;
+  }
+  .app .all h4 {
+    width: 100%;
+    height: 33px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 0;
+    border-bottom: solid 3px rgb(28, 26, 59);
+    margin-top: 10px;
+    color: rgb(218, 231, 230);
+    color: rgb(219, 230, 229);
+    background-color: #79c2bd00;
+  }
+  .myData {
+    height: 130px;
+    width: 100%;
+    position: absolute;
+    margin-top: 250px;
+  }
+  .myData h3 {
+    margin-top: -50px;
+    font-size: 22px;
+    color: black;
+  }
+  .myData span {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .myData span i {
+    font-size: 26px;
+    color: #0c1333;
+  }
+  .myData span p {
+    font-size: 23px;
+    color: black;
+  }
+  .mapCity {
+    display: none;
+  }
+}
+/* ########################################################### */
+@media (min-width: 768px) and (max-width: 860px) {
+  .container {
+    height: 100%;
+    padding-bottom: 15px;
+  }
+  .app {
+    width: 600px;
+  }
+  .app .said {
+    font-size: 1px;
+  }
+  .mapCity p {
+    font-size: 16px;
+  }
+  .app .logo {
+    width: calc(600px - 38%);
+  }
+  .app .deg {
+    width: calc(600px - 38%);
+    font-size: 50px;
+  }
+  .app .all {
+    width: calc(600px - 38%);
+  }
+  .app .all h4 {
+    height: 110px;
+    margin-top: 10px;
+    font-size: 11px;
+  }
+  .myData span {
+    padding: 5px;
+  }
+  .myData span i {
+    font-size: 18px;
+    margin-left: 5px;
+    margin-top: 2px;
+  }
+  .myData span p {
+    font-size: 16px;
+  }
+}
