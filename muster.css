@@ -175,7 +175,7 @@ hr {
   height: 120px;
   margin-top: 165.5px;
   border-radius: 0 0 0 6px;
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   display: none;
 }
